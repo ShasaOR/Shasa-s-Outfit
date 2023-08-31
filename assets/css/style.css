@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Raleway:ital,wght@1,100&family=Roboto+Slab:wght@300;600;800&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Kani&family', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(../image/gambarShasa2.jpeg);
+}
+
+.container{
+    background-color:brown;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h3{
+    color:rgb(224, 166, 89);
+}
+
+.item{
+    background-color:navajowhite;
+    padding: 1rem 10rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.item a{
+    text-decoration: none;
+    color: brown;
+    font-size: 1.2rem;
+}
+
+.item:hover{
+    background-color:khaki;
+    transform: translateY(5px);
+}
+
+@media (max-widht: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .item {
+        padding: irem 3rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
